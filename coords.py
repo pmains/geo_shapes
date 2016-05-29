@@ -33,7 +33,7 @@ def main():
     # Convert points
     pts = esri_to_geo(*sr.shape.points)
     poly.outerboundaryis = pts
-    kml.save("Arf.kml")
+    kml.save("GilbertGardens.kml")
 
 if __name__ == "__main__":
     main()
