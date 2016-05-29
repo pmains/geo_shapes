@@ -23,7 +23,7 @@ def main():
     kml = simplekml.Kml()
     kml.newpolygon()
     poly = kml.features[0]
-    pts = coords.esri_to_geo(*sr.shape.points)
+    pts = esri_to_geo(*sr.shape.points)
     poly.outerboundaryis = pts
     kml.save("Arf.kml")
 
