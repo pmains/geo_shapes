@@ -4,7 +4,8 @@ import simplekml
 
 def esri_to_geo(*points):
     # ArcGIS format
-    in_proj = Proj(init='epsg:3857')
+    # in_proj = Proj(init='epsg:3857')
+    in_proj = Proj(init='epsg:2868')
     # Standard geodetic format
     out_proj = Proj(init='epsg:4326')
     # New array that will hold points in latitude/longitude
